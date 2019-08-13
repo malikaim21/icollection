@@ -1,0 +1,56 @@
+                                    <tr>
+                                        <td>Kondisi Konsumen</td>
+                                        <td>:</td>
+                                        <td><?php echo $row['konsumen']; ?></td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td>Kondisi Unit</td>
+                                        <td>:</td>
+                                        <td><?php echo $row['kondisi_unit']; ?></td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td>Realisasi</td>
+                                        <td>:</td>
+                                        <td><?php echo $row['realisasi']; ?></td>   
+                                    </tr>
+
+                                    <tr>
+                                        
+                                        <td>Tanngal Janji Bayar</td>
+                                        <td>:</td>
+                                        <td>
+                                        <?php
+                                            if ($row['tgl_janji_bayar']) {
+                                                echo date ("d-m-Y", strtotime($row['tgl_janji_bayar']));      
+                                            } else {
+                                            echo "";
+                                            }
+                                         ?>
+                                        </td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td>Via</td>
+                                        <td>:</td>
+                                        <td><?php echo $row['via']; ?></td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td>Tanggal Followup</td>
+                                        <td>:</td>
+                                        <td><?php echo date ("d-m-Y, H:i:s", strtotime($row['tgl_followup'])); ?></td>   
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>   
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>   
+                                    </tr>
